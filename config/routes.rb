@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :safe_zones
 
-  get 'safezone/alert', to: "safe_zones#alert"
+  get '/alert', to: "safe_zones#alert"
 
 
 

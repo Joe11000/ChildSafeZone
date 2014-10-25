@@ -1,13 +1,13 @@
 class SafeZonesController < ApplicationController
-  before_action :set_safe_zone, only: [:show, :edit, :update, :destroy, :alert]
+  before_action :set_safe_zone, only: [:show, :edit, :update, :destroy]
 
 
   def alert
 
-    params[:child_coordinates]
+    # params[:child_coordinates]
     nearest = SafeZone.first
 
-    render json: { "latitude": nearest.latitude, "longitude": nearest.longitude }
+    render json: { "latitude" => nearest.latitude, "longitude" => nearest.longitude }
   end
 
   # GET /safe_zones
