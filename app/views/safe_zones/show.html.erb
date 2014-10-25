@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location name:</strong>
+  <%= @safe_zone.location_name %>
+</p>
+
+<p>
+  <strong>Person name:</strong>
+  <%= @safe_zone.person_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @safe_zone.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @safe_zone.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @safe_zone.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_safe_zone_path(@safe_zone) %> |
+<%= link_to 'Back', safe_zones_path %>
